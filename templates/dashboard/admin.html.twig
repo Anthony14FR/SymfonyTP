@@ -1,0 +1,18 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Admin Dashboard{% endblock %}
+
+{% block body %}
+    <h1>Admin Dashboard</h1>
+    <p>Bienvenue dans l'interface d'administration</p>
+
+    <div class="admin-shortcuts">
+        <h2>Gestion du contenu</h2>
+        <ul>
+            <li><a href="{{ path('app_publication_index') }}">Gérer les Publications</a></li>
+            <li><a href="{{ path('app_commentaire_index') }}">Gérer les Commentaires</a></li>
+            <li><a href="{{ path('app_reaction_index') }}">Gérer les Réactions</a></li>
+            <li><a href="{{ path('app_tag_index') }}">Gérer les Tags</a></li>
+        </ul>
+    </div>
+{% endblock %}

@@ -1,0 +1,7 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <h1>Token de réinitialisation</h1>
+    <p>Voici votre token : <strong>{{ resetToken }}</strong></p>
+    <p>Rendez-vous sur <a href="{{ path('app_reset_password', {token: resetToken}) }}">ce lien</a> pour réinitialiser votre mot de passe.</p>
+{% endblock %}
